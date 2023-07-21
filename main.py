@@ -109,11 +109,11 @@ def main():
         elif opcao == "nu":
             criar_usuario(usuarios)
         elif opcao =="nc":
-            numero_conta = len(contas)
+            numero_conta = len(contas) +1
             conta = criar_conta(AGENCIA, numero_conta, usuarios)
             if conta:
                 contas.append(conta)
-                numero_conta += 1
+                
         elif opcao == "lc":
             listar_contas(contas)
         elif opcao == "q":
